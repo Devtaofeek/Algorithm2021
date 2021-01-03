@@ -12,7 +12,7 @@ namespace Algorithm2021
         /// </summary>
         /// <param name="nums"></param>
         /// <returns></returns>
-        public static int NumberofConsecutiveOnes(int[] nums)
+        public static int NumberOfConsecutiveOnes(int[] nums)
         {
             if (nums.Length == 0)
             {
