@@ -7,7 +7,7 @@ namespace Algorithm2021
    public static class ArrayStructure
     {
         /// <summary>
-        /// fuction that returns number of consecutive ones in an array
+        /// fuction that returns number of consecutive 1's in an array
         /// time complexity is O(n) spave
         /// </summary>
         /// <param name="nums"></param>
