@@ -6,7 +6,7 @@ namespace Algorithm2021
     {
         static void Main(string[] args)
         {
-            int[] arr = new int[] { 12, 345, 2, 6, 7896 };
+            int[] arr = new int[] { 12, 3456, 2, 6, 7896 };
           var ans =  ArrayStructure.FindNumbersWithEvenNumberofdigits(arr);
             Console.WriteLine(ans);
         }

@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Algorithm2021
 {
-   public static class ArrayStructure
+    public static class ArrayStructure
     {
         /// <summary>
-        /// fuction that returns number of consecutive 1's in an array
+        /// fuction That returns number of consecutive 1's in an array
         /// time complexity is O(n) spave
         /// </summary>
         /// <param name="nums"></param>
@@ -32,11 +30,11 @@ namespace Algorithm2021
                     sublength = Math.Max(prevlength, sublength);
                     prevlength = 0;
                 }
-               
             }
 
             return sublength;
         }
+
         /// <summary>
         /// fuction to find numbers with even numbers of digits in an array
         /// </summary>
@@ -53,18 +51,33 @@ namespace Algorithm2021
             {
                 var curnum = item;
                 int numcount = 0;
-                while(curnum/10  >= 1)
+                while (curnum != 0)
                 {
                     numcount++;
                     curnum = curnum / 10;
                 }
 
-                if (numcount % 2 != 0)
+                if (numcount % 2 == 0)
                 {
                     evencount++;
                 }
             }
             return evencount;
+        }
+
+        public static int[] SquareofArr(int[] nums)
+        {
+            if (nums.Length == 0)
+            {
+                return new int[] { };
+            }
+            int[] result = new int[nums.Length];
+            for (int i = 0; i < nums.Length; i++)
+            {
+                result[i] = nums[i] * nums[i];
+            }
+             Array.Sort(result);
+            return result;
         }
     }
 }
